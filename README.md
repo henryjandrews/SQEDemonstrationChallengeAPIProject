@@ -1,4 +1,4 @@
-## API Demo Challange
+## API Demo Challenge
 
 #### Project Setup
 1. Clone this project.
@@ -16,8 +16,8 @@ We will be evaluating
 6. Code modularity
 
 
-#### Excercise
-1. Review the spec in the root directory, PizzaAPIReferenceDoc.  API endpoints for this excercise can be found here
+#### Exercise
+1. Review the spec in the root directory, PizzaAPIReferenceDoc.  API endpoints for this exercise can be found here
    https://my-json-server.typicode.com/sa2225/demo/
 2. In the Read me file, write up all of the test cases you think are necessary to test the endpoints defined in the provided spec.
 3. Code up a few examples of 
