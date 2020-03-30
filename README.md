@@ -26,6 +26,7 @@ We will be evaluating
 4. When complete please check your code into a public git repo
 
 ### Test Cases
+- Coded test examples can be found in this repo [here](https://github.com/henryjandrews/SQEDemonstrationChallengeAPIProject/blob/master/src/main/java/com/sample/test/demo/tests/PizzaApiTest.java)
 #### /pizzas
  1. **Test GET all pizzas**
   - **Description:** Execute a GET request on the /pizzas endpoint
