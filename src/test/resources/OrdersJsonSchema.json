@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "description": "An explanation about the purpose of this instance.",
+    "default": {},
+    "examples": [
+      {
+        "id": "1",
+        "items": [
+          {
+            "item": 1.0,
+            "pizza": "Medium 8 Slices - 2 toppings",
+            "toppings": [
+              "Mushrooms",
+              "Extra cheese"
+            ]
+          },
+          {
+            "item": 2.0,
+            "pizza": "Large 10 Slices - 2 toppings",
+            "toppings": [
+              "Italian Ham",
+              "Salami"
+            ]
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "toppings": [],
+            "item": 1.0,
+            "pizza": "Small 6 Slices - no toppings"
+          }
+        ],
+        "id": "2"
+      },
+      {
+        "items": [
+          {
+            "pizza": "Small 6 Slices - 1 topping",
+            "toppings": [
+              "Mushrooms"
+            ],
+            "item": 1.0
+          }
+        ],
+        "id": "3"
+      }
+    ],
+    "required": [
+      "id",
+      "items"
+    ],
+    "properties": {
+      "id": {
+        "$id": "#/items/properties/id",
+        "type": "string",
+        "title": "The Id Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": "",
+        "examples": [
+          "1"
+        ]
+      },
+      "items": {
+        "$id": "#/items/properties/items",
+        "type": "array",
+        "title": "The Items Schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": [],
+        "items": {
+          "$id": "#/items/properties/items/items",
+          "type": "object",
+          "title": "The Items Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "pizza": "Medium 8 Slices - 2 toppings",
+              "toppings": [
+                "Mushrooms",
+                "Extra cheese"
+              ],
+              "item": 1.0
+            },
+            {
+              "toppings": [
+                "Italian Ham",
+                "Salami"
+              ],
+              "item": 2.0,
+              "pizza": "Large 10 Slices - 2 toppings"
+            }
+          ],
+          "required": [
+            "item",
+            "pizza",
+            "toppings"
+          ],
+          "properties": {
+            "item": {
+              "$id": "#/items/properties/items/items/properties/item",
+              "type": "integer",
+              "title": "The Item Schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": 0,
+              "examples": [
+                1
+              ]
+            },
+            "pizza": {
+              "$id": "#/items/properties/items/items/properties/pizza",
+              "type": "string",
+              "title": "The Pizza Schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "Medium 8 Slices - 2 toppings"
+              ]
+            },
+            "toppings": {
+              "$id": "#/items/properties/items/items/properties/toppings",
+              "type": "array",
+              "title": "The Toppings Schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": [],
+              "items": {
+                "$id": "#/items/properties/items/items/properties/toppings/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Mushrooms",
+                  "Extra cheese"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

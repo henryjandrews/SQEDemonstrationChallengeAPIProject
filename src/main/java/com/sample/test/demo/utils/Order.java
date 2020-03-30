@@ -11,6 +11,15 @@ public class Order {
     private String id = "";
     private List<Pizza> items;
 
+    public Order() {
+    }
+
+    // Order Constructor
+    public Order(String id, List<Pizza> items) {
+        setId(id);
+        setItems(items);
+    }
+
     public Order setId(String id) {
         this.id = id;
         return this;

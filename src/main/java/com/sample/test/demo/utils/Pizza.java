@@ -12,6 +12,15 @@ public class Pizza {
     private String pizza = "";
     private List<String> toppings;
 
+    public Pizza() {
+    }
+    public Pizza(String item, String pizza, List<String> toppings) {
+        setItem(item);
+        setPizza(pizza);
+        setToppings(toppings);
+    }
+
+
     public Pizza setItem(String item) {
         this.item = item;
         return this;
